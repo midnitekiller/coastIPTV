@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.direct2guests.d2g_tv.Activities.FaqActivity">
+
+    <RelativeLayout
+        android:id="@+id/FaqLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/main4"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="match_parent"
+            android:layout_height="113dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="580dp"
+            android:layout_marginEnd="0dp"
+            android:background="@color/black" />
+
+        <Button
+            android:id="@+id/homeButtonFaq"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="75dp"
+            android:layout_marginTop="45dp"
+            android:background="@drawable/home_logo" />
+
+        <Button
+            android:id="@+id/backButtonFaq"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignTop="@+id/homeButtonFaq"
+            android:layout_toRightOf="@+id/homeButtonFaq"
+            android:background="@drawable/back_logo" />
+
+        <TextView
+            android:id="@+id/FaqTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="45dp"
+            android:layout_toRightOf="@+id/backButtonFaq"
+            android:padding="15dp"
+            android:text="Frequently Asked Questions"
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:textSize="35sp" />
+
+        <RelativeLayout
+            android:id="@+id/notif"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/FaqTitle"
+            android:layout_marginEnd="49dp"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/new_message"
+                android:layout_width="26dp"
+                android:layout_height="25dp"
+                android:layout_alignRight="@+id/chat_message"
+                android:background="@drawable/badge_circle"
+                android:gravity="center_vertical|center_horizontal"
+                android:textAlignment="center"
+                android:translationZ="30dp" />
+
+            <Button
+                android:id="@+id/chat_message"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/message_icon" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="false"
+            android:layout_below="@+id/FaqTitle">
+
+            <ExpandableListView
+                android:id="@+id/faqList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="100dp"
+                android:layout_marginRight="100dp"
+                android:layout_marginTop="30dp"
+                android:layout_toRightOf="@+id/hotelLogo" />
+
+            <ImageView
+                android:id="@+id/hotelLogo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:adjustViewBounds="true" />
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

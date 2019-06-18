@@ -1,0 +1,62 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
+
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion '28.0.3'
+    defaultConfig {
+        applicationId "com.direct2guests.d2g_tv"
+        minSdkVersion 23
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0.11"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    // add: Prevent errors in "Generate Signed APK"
+    lintOptions {
+        checkReleaseBuilds false
+        disable 'MissingTranslation'
+        abortOnError false
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    //additional dependencies
+
+
+    implementation 'net.butterflytv.utils:rtmp-client:3.0.0RC'
+    implementation 'com.android.support:leanback-v17:26.+'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    implementation 'com.android.support:appcompat-v7:26.+'
+    /**chyll remove temp to implementation*/
+    implementation 'com.github.bumptech.glide:glide:3.4.+'
+    implementation 'com.android.volley:volley:1.1.0'
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+    implementation 'com.google.android.exoplayer:exoplayer:r2.4.4'
+    implementation 'com.github.lguipeng:BubbleView:1.0.1'
+    implementation 'com.google.android.gms:play-services-analytics:16.0.4'
+    implementation 'com.google.apis:google-api-services-translate:v2-rev51-1.23.0'
+    implementation 'com.akexorcist:localizationactivity:1.2.2'
+
+    implementation('mateuszklimek.framevideoview:framevideoview:1.1.0@aar')
+
+
+//    implementation project(path: ':app', configuration: 'default')
+    implementation 'com.google.firebase:firebase-analytics:16.0.4'
+    implementation 'com.google.firebase:firebase-core:16.0.4'
+    implementation 'com.google.android.gms:play-services-tagmanager:16.0.4'
+    implementation 'com.google.firebase:firebase-auth:16.0.4'
+}
+//com.google.gms.googleservices.GoogleServicesPlugin.config.disableVersionCheck = false

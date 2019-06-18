@@ -1,0 +1,603 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/launcher_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/crimsonbg"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp">
+
+        <ImageView
+            android:id="@+id/arrowRight"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="35dp"
+            android:background="@drawable/right" />
+
+        <ImageView
+            android:id="@+id/arrowLeft"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginBottom="35dp"
+            android:background="@drawable/left" />
+
+        <TextClock
+            android:id="@+id/textClock3"
+            android:layout_width="143dp"
+            android:layout_height="41dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="56dp"
+            android:layout_marginEnd="62dp"
+            android:fontFamily="@font/brandonbold"
+            android:text="textClock"
+            android:textAlignment="textEnd"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            android:typeface="normal" />
+
+        <TextView
+            android:id="@+id/guestNameTxtV3"
+            android:layout_width="303dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="96dp"
+            android:layout_marginEnd="61dp"
+            android:fontFamily="@font/gothambook"
+            android:text="@string/indexGuestName"
+            android:textAlignment="viewEnd"
+            android:textColor="#FAFAFA"
+            android:textSize="14sp"
+            android:typeface="normal" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="580dp"
+            android:background="#590e0d0d" />
+
+        <ImageView
+            android:id="@+id/userLogo"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="76dp"
+            android:layout_marginTop="46dp"
+            android:src="@drawable/user_icon"
+            android:visibility="invisible"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/welcomeGuest_hs"
+            android:layout_width="261dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="55dp"
+            android:layout_marginBottom="36dp"
+            android:fontFamily="sans-serif"
+            android:text="@string/launcherWelcome"
+            android:textAlignment="viewStart"
+            android:textColor="#ffff"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/dateView_hs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/userLogo"
+            android:layout_marginEnd="6dp"
+            android:layout_marginBottom="-176dp"
+            android:layout_toStartOf="@+id/timeDaily"
+            android:fontFamily="@font/gothambook"
+            android:text="@string/launcherDate"
+            android:textAlignment="viewEnd"
+            android:textAllCaps="false"
+            android:textColor="#ffff"
+            android:textSize="24sp"
+            android:typeface="monospace"
+            android:visibility="invisible" />
+
+        <TextClock
+            android:id="@+id/timeDaily"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/welcomeGuest_hs"
+            android:layout_alignBottom="@+id/welcomeGuest_hs"
+            android:layout_alignParentEnd="true"
+            android:fontFamily="@font/gothambook"
+            android:textAppearance="@android:style/TextAppearance.Material"
+            android:textColor="@color/orange"
+            android:textSize="18sp"
+            android:visibility="invisible" />
+
+        <RelativeLayout
+            android:id="@+id/widgets"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignWithParentIfMissing="true"
+            android:layout_below="@+id/weather"
+            android:layout_marginTop="255dp"
+            android:gravity="right">
+
+            <RelativeLayout
+                android:id="@+id/notif"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentTop="false"
+                android:layout_alignParentRight="true"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/new_message"
+                    android:layout_width="26dp"
+                    android:layout_height="25dp"
+                    android:layout_alignRight="@+id/chat_message"
+                    android:background="@drawable/badge_circle"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:textAlignment="center"
+                    android:translationZ="30dp" />
+
+                <Button
+                    android:id="@+id/chat_message"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/message_icon"
+                    android:visibility="invisible" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/currency"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/notif"
+                android:background="@drawable/circle_app_icon"
+                android:onClick="openCurrency"
+                android:visibility="invisible" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/weather"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dateView_hs"
+            android:layout_alignRight="@+id/timeDaily"
+            android:gravity="right"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/weatherIcon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerInParent="false"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:scaleType="fitCenter" />
+
+            <TextView
+                android:id="@+id/weatherDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="false"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/weatherTemp"
+                android:textColor="#fff"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/weatherTemp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="7dp"
+                android:layout_toRightOf="@+id/weatherIcon"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/selections_hs"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_below="@+id/widgets"
+            android:layout_alignParentStart="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="75dp"
+            android:layout_marginTop="49dp"
+            android:layout_marginEnd="75dp">
+
+            <ImageView
+                android:id="@+id/hotelLogo_hs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignWithParentIfMissing="false"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="false"
+                android:layout_centerInParent="false"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="20dp"
+                android:adjustViewBounds="true" />
+
+            <HorizontalScrollView
+                android:id="@+id/horizontalScrollView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:animationCache="true"
+                android:overScrollMode="always"
+                android:scrollbarStyle="insideOverlay">
+
+                <LinearLayout
+                    android:id="@+id/lineLayoutServices"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="fill_horizontal"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal">
+
+
+                    <FrameLayout
+                        android:id="@+id/watchtv_frame"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="10dp"
+                        android:alwaysDrawnWithCache="true"
+                        android:drawingCacheQuality="auto"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:onClick="openTV"
+                        android:translationZ="1dp"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/txtwatchtv"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="60dp"
+                            android:fontFamily="@font/gothambook"
+                            android:text="@string/launcherWatchTV"
+                            android:textAlignment="center"
+                            android:textColor="#878782"
+                            android:textSize="16sp"
+                            android:typeface="normal" />
+
+                        <requestFocus />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/watchvod_frame"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="10dp"
+                        android:alwaysDrawnWithCache="true"
+                        android:drawingCacheQuality="auto"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:onClick="openVOD"
+                        android:translationZ="1dp"
+                        android:visibility="visible">
+
+                        <TextView
+                            android:id="@+id/txtwatchvod"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="60dp"
+                            android:fontFamily="@font/gothambook"
+                            android:text="@string/launcherWatchVOD"
+                            android:textAlignment="center"
+                            android:textColor="#878782"
+                            android:textSize="16sp"
+                            android:typeface="normal" />
+
+                    </FrameLayout>
+
+
+                    <FrameLayout
+                        android:id="@+id/frontdesk_frame"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="10dp"
+                        android:alwaysDrawnWithCache="true"
+                        android:drawingCacheQuality="auto"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:onClick="openChat"
+                        android:translationZ="1dp"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/txtfrontdesk"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="60dp"
+                            android:fontFamily="@font/gothambook"
+                            android:text="@string/launcherFrontDeskChat"
+                            android:textAlignment="center"
+                            android:textColor="#878782"
+                            android:textSize="16sp"
+                            android:typeface="normal" />
+                    </FrameLayout>
+
+
+                    <FrameLayout
+                        android:id="@+id/foods_frame"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="10dp"
+                        android:alwaysDrawnWithCache="true"
+                        android:drawingCacheQuality="auto"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:onClick="openFood"
+                        android:translationZ="1dp"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/txtfood"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="60dp"
+                            android:fontFamily="@font/gothambook"
+                            android:text="@string/launcherFoodDrinks"
+                            android:textAlignment="center"
+                            android:textColor="#878782"
+                            android:textSize="16sp"
+                            android:typeface="normal" />
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/places_frame"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="10dp"
+                        android:alwaysDrawnWithCache="true"
+                        android:drawingCacheQuality="auto"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:onClick="openPlaces"
+                        android:translationZ="1dp"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/txtplaces"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="60dp"
+                            android:fontFamily="@font/gothambook"
+                            android:text="@string/launcherPlacesNearby"
+                            android:textAlignment="center"
+                            android:textColor="#878782"
+                            android:textSize="16sp"
+                            android:typeface="normal" />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/services_frame"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="10dp"
+                        android:alwaysDrawnWithCache="true"
+                        android:drawingCacheQuality="auto"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:onClick="openServices"
+                        android:translationZ="1dp"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/txtservices"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="60dp"
+                            android:fontFamily="@font/gothambook"
+                            android:text="@string/launcherSpaRentalServices"
+                            android:textAlignment="center"
+                            android:textColor="#878782"
+                            android:textSize="16sp"
+                            android:typeface="normal" />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/house_frame"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="10dp"
+                        android:alwaysDrawnWithCache="true"
+                        android:drawingCacheQuality="auto"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:onClick="openHousekeeping"
+                        android:translationZ="1dp"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/txthousekeeping"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="60dp"
+                            android:fontFamily="@font/gothambook"
+                            android:text="@string/launcherHousekeeping"
+                            android:textAlignment="center"
+                            android:textColor="#878782"
+                            android:textSize="16sp"
+                            android:typeface="normal" />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/offers_frame"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="10dp"
+                        android:alwaysDrawnWithCache="true"
+                        android:drawingCacheQuality="auto"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:onClick="openOffers"
+                        android:translationZ="1dp"
+                        android:visibility="visible">
+
+                        <TextView
+                            android:id="@+id/txtoffer"
+                            android:layout_width="match_parent"
+                            android:layout_height="37dp"
+                            android:layout_marginTop="60dp"
+                            android:fontFamily="@font/gothambook"
+                            android:text="@string/launcherOffers"
+                            android:textAlignment="center"
+                            android:textColor="#878782"
+                            android:textSize="16sp"
+                            android:typeface="normal" />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/feedback_frame"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="10dp"
+                        android:alwaysDrawnWithCache="true"
+                        android:drawingCacheQuality="auto"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:onClick="openFeedback"
+                        android:translationZ="1dp"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/txtfeedback"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="60dp"
+                            android:fontFamily="@font/gothambook"
+                            android:text="@string/launcherFeedBack"
+                            android:textAlignment="center"
+                            android:textColor="#878782"
+                            android:textSize="16sp"
+                            android:typeface="normal" />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/flight_frame"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="10dp"
+                        android:alwaysDrawnWithCache="true"
+                        android:drawingCacheQuality="auto"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:onClick="openFlights"
+                        android:translationZ="1dp"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/txtflight"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="60dp"
+                            android:fontFamily="@font/gothambook"
+                            android:text="@string/launcherFlightTracker"
+                            android:textAlignment="center"
+                            android:textColor="#878782"
+                            android:textSize="16sp"
+                            android:typeface="normal" />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/info_frame"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="10dp"
+                        android:alwaysDrawnWithCache="true"
+                        android:drawingCacheQuality="auto"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:onClick="openInfo"
+                        android:translationZ="1dp"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/txtinfo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="60dp"
+                            android:fontFamily="@font/gothambook"
+                            android:text="@string/launcherYourInfo"
+                            android:textAlignment="center"
+                            android:textColor="#878782"
+                            android:textSize="16sp"
+                            android:typeface="normal" />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/faq_frame"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="10dp"
+                        android:alwaysDrawnWithCache="true"
+                        android:drawingCacheQuality="auto"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:onClick="openFaq"
+                        android:translationZ="1dp"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/txtfaq"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="60dp"
+                            android:fontFamily="@font/gothambook"
+                            android:text="@string/launcherFAQ"
+                            android:textAlignment="center"
+                            android:textColor="#ffffff"
+                            android:textSize="16sp"
+                            android:typeface="normal" />
+                    </FrameLayout>
+
+                </LinearLayout>
+            </HorizontalScrollView>
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>

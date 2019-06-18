@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.direct2guests.d2g_tv.Activities.PlacesNearbyDetailsActivity">
+
+    <RelativeLayout
+        android:id="@+id/placesRelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <ImageView
+            android:id="@+id/mImageBG"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:id="@+id/mImage"
+            android:layout_width="651dp"
+            android:layout_height="335dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="1dp"
+            android:scaleType="centerInside"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="match_parent"
+            android:layout_height="113dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="580dp"
+            android:background="@color/black"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/HomeButtonDetails"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="46dp"
+            android:layout_marginBottom="18dp"
+            android:background="@drawable/home_logo"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:focusedByDefault="true"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/BackButtonDetails"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignBottom="@+id/HomeButtonDetails"
+            android:layout_marginStart="30dp"
+            android:layout_toRightOf="@+id/HomeButtonDetails"
+            android:background="@drawable/back_logo"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/PlacesDetailTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_alignBottom="@+id/HomeButtonDetails"
+            android:layout_centerVertical="false"
+            android:layout_marginStart="30dp"
+            android:layout_toRightOf="@+id/BackButtonDetails"
+            android:fontFamily="@font/gothambook"
+            android:text="Places Details"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/notif"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignTop="@+id/PlacesDetailTitle"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="49dp"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/new_message"
+                android:layout_width="26dp"
+                android:layout_height="25dp"
+                android:layout_alignRight="@+id/chat_message"
+                android:background="@drawable/badge_circle"
+                android:gravity="center_vertical|center_horizontal"
+                android:textAlignment="center"
+                android:translationZ="30dp"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/chat_message"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/message_icon"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/DetailsList"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="70dp"
+            android:layout_marginEnd="70dp">
+
+
+            <HorizontalScrollView
+                android:id="@+id/DetailsScrollView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:animationCache="true"
+                android:scrollbarSize="1dp">
+
+                <LinearLayout
+                    android:id="@+id/DetailsCards"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:alwaysDrawnWithCache="true"
+                    android:animateLayoutChanges="true"
+                    android:animationCache="true"
+                    android:orientation="horizontal"
+                    android:scrollbarSize="1dp">
+
+                </LinearLayout>
+            </HorizontalScrollView>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

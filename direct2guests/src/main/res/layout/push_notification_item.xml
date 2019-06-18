@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pushItem"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:background="#e9ffffff">
+
+    <RelativeLayout
+        android:id="@+id/barL"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_marginTop="3dp"
+        android:background="#000841">
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/pushText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/barL"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="7dp"
+        android:text="Sale! Sale! Sale! Avail our 50% promo on selected menu item in our restaurant. "
+        android:textColor="#303030"
+        android:textSize="16sp" />
+</RelativeLayout>

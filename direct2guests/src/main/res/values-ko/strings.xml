@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="launcherDate" translatable="false">July 12, 2018</string>
+    <string name="app_name" translatable="false">D2G-IPTV</string>
+    <string name="indexGuestName">" 사랑하는 손님"</string>
+    <string name="indexContinueButton">잇다</string>
+    <string name="indexHotelName">" 알리 네스 룸"</string>
+    <string name="indexTo">" 에"</string>
+    <string name="indexWelcome">" 환영"</string>
+    <string name="Korean">ko</string>
+    <string name="langText">언어</string>
+    <string name="launcherWelcome">안녕 </string>
+    <string name="launcherWatchTV">" TV / 영화"</string>
+    <string name="launcherHotelServices">" 룸 서비스"</string>
+    <string name="launcherFrontDeskChat">" 프론트 데스크 채팅"</string>
+    <string name="launcherFoodDrinks">" 음식과 음료"</string>
+    <string name="launcherPlacesNearby">" 인근 지역"</string>
+    <string name="launcherHousekeeping">가정</string>
+    <string name="launcherSpaRentalServices">스파 및 렌탈 서비스</string>
+    <string name="launcherYourInfo">" 귀하의 정보"</string>
+    <string name="launcherOffers">행사</string>
+    <string name="launcherFeedBack">피드백</string>
+    <string name="launcherFlightTracker">" 항공편 추적기 "</string>
+    <string name="launcherFAQ">" 자주하는 질문"</string>
+    <string name="launcherHello">안녕</string>
+    <string name="formViewChoices">보기 선택</string>
+    <string name="formChanBttn">채널</string>
+    <string name="formVODBttn">채널</string>
+    <string name="launcherExtendButton">연장 / 체크 아웃</string>
+    <string name="launcherTMChannel">라이브 채널</string>
+    <string name="launcherTMVOD">" 주문형 비디오"</string>
+    <string name="launcherTMWelcometxt">엔터테인먼트 선택</string>
+
+
+</resources>

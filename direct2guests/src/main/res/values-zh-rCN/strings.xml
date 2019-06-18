@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">D2G-IPTV</string>
+    <string name="indexWelcome">欢迎</string>
+    <string name="launcherWelcome">你好</string>
+    <string name="formChanBttn">通道</string>
+    <string name="launcherFrontDeskChat">前台聊天</string>
+    <string name="indexContinueButton">继续</string>
+    <string name="launcherOffers">商情</string>
+    <string name="launcherFAQ">" 常问问题"</string>
+    <string name="formVODBttn">电影</string>
+    <string name="launcherHello">你好</string>
+    <string name="indexTo">至</string>
+    <string name="indexGuestName">亲爱的客人</string>
+    <string name="langText">语言</string>
+    <string name="launcherPlacesNearby">附近的地方</string>
+    <string name="launcherHousekeeping">家政</string>
+    <string name="launcherFoodDrinks">食品和饮料</string>
+    <string name="launcherFeedBack">" 反馈"</string>
+    <string name="launcherHotelServices">客房服务</string>
+    <string name="launcherSpaRentalServices">水疗和租赁服务</string>
+    <string name="launcherFlightTracker">航班跟踪</string>
+    <string name="launcherWatchTV">电视/电影</string>
+    <string name="formViewChoices">" 查看选择 "</string>
+    <string name="launcherYourInfo">你的信息</string>
+    <string name="indexHotelName">" D2G演示酒店"</string>
+    <string name="launcherExtendButton">"扩展/结帐 "</string>
+    <string name="launcherTMChannel">直播频道</string>
+    <string name="launcherTMVOD">视频点播</string>
+    <string name="launcherTMWelcometxt">选择你的娱乐</string>
+</resources>

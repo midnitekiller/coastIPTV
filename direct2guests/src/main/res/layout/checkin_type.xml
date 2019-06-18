@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/showhouse"
+        android:layout_width="531dp"
+        android:layout_height="250dp"
+        android:background="@drawable/modal_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.492">
+
+        <TextView
+            android:id="@+id/HousekeepingTitleS"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="false"
+            android:layout_alignParentTop="false"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:background="#bb000000"
+            android:padding="0dp"
+            android:text="Check In Process"
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/checkinDateDialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/HousekeepingTitleS"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="32dp"
+            android:text="@string/launcherDate"
+            android:textAlignment="center"
+            android:textColor="#393939"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/promoBttn"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="108dp"
+            android:layout_marginBottom="83dp"
+            android:background="@drawable/confirm_button"
+            android:focusable="auto"
+            android:focusableInTouchMode="true"
+            android:onClick="onClickPromoTime"
+            android:text="CHECKIN NOW"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/shortBttn"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="268dp"
+            android:layout_marginEnd="102dp"
+            android:background="@drawable/confirm_button"
+            android:focusable="auto"
+            android:focusableInTouchMode="true"
+            android:onClick="onClickShortTime"
+            android:text="3 Hours Package"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/longBttn"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_alignStart="@+id/shortBttn"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="-20dp"
+            android:layout_marginBottom="26dp"
+            android:background="@drawable/confirm_button"
+            android:focusable="auto"
+            android:focusableInTouchMode="true"
+            android:focusedByDefault="true"
+            android:onClick="onClickLongTime"
+            android:text="12 Hours Package"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:visibility="invisible" />
+
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

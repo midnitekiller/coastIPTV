@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false">
+    <item android:drawable="@drawable/ql1" android:duration="50" />
+    <item android:drawable="@drawable/ql2" android:duration="50" />
+    <item android:drawable="@drawable/ql3" android:duration="50" />
+
+</animation-list>
+
+<!--<animation-list xmlns:android="http://schemas.android.com/apk/res/android">-->
+<!--<item-->
+    <!--android:drawable="@drawable/ads01"-->
+    <!--android:duration="4000" />-->
+<!--<item-->
+    <!--android:drawable="@drawable/ads02"-->
+    <!--android:duration="4000" />-->
+<!--<item-->
+    <!--android:drawable="@drawable/ads03"-->
+    <!--android:duration="4000" />-->
+<!--<item-->
+    <!--android:drawable="@drawable/ads04"-->
+    <!--android:duration="4000" />-->
+<!--<item-->
+    <!--android:drawable="@drawable/ads05"-->
+    <!--android:duration="4000" />-->
+<!--<item-->
+    <!--android:drawable="@drawable/ads06"-->
+    <!--android:duration="4000" />-->
+<!--<item-->
+    <!--android:drawable="@drawable/ads07"-->
+    <!--android:duration="4000" />-->
+<!--<item-->
+    <!--android:drawable="@drawable/ads08"-->
+    <!--android:duration="4000" />-->
+
+<!--</animation-list>-->

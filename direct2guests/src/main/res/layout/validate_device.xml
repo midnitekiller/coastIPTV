@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/modalValidate"
+    android:layout_width="510dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical|center_horizontal"
+    android:background="@drawable/btn_transparent"
+    android:padding="10dp"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="25dp">
+
+    <TextView
+        android:id="@+id/validateTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Device is not Registered!!!"
+        android:textColor="#fff"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/textDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/validateTitle"
+        android:layout_marginTop="10dp"
+        android:text="Please fill in the right Inputs"
+        android:textColor="#fff"
+        android:textSize="20sp" />
+
+    <RelativeLayout
+        android:id="@+id/inputsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textDesc"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="center_horizontal">
+
+        <EditText
+            android:id="@+id/hotelnameValidate"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="7dp"
+            android:ems="10"
+            android:hint="Hotel Name"
+            android:inputType="textPersonName"
+            android:textColor="#fff" />
+
+        <EditText
+            android:id="@+id/roomnumberValidate"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_toRightOf="@+id/hotelnameValidate"
+            android:ems="10"
+            android:hint="Room Number"
+            android:inputType="textPersonName" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/inputsLayout"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/validateButton"
+            android:layout_width="200dp"
+            android:layout_height="45dp"
+            android:background="@drawable/confirm_button"
+            android:text="Validate Device" />
+    </RelativeLayout>
+
+</RelativeLayout>

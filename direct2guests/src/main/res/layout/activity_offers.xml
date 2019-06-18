@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.direct2guests.d2g_tv.Activities.OffersActivity">
+
+    <RelativeLayout
+        android:id="@+id/OffersLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="29dp">
+
+        <ImageView
+            android:id="@+id/offersBG"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="false"
+            android:layout_alignParentBottom="false" />
+
+        <Button
+            android:id="@+id/homeButtonOffers"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="46dp"
+            android:layout_marginBottom="18dp"
+            android:background="@drawable/home_logo"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/backButtonOffers"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignBottom="@+id/homeButtonOffers"
+            android:layout_marginStart="30dp"
+            android:layout_toRightOf="@+id/homeButtonOffers"
+            android:background="@drawable/back_logo"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/OfferTitle"
+            android:layout_width="238dp"
+            android:layout_height="59dp"
+            android:layout_alignBottom="@+id/backButtonOffers"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="39dp"
+            android:layout_marginBottom="-10dp"
+            android:layout_toRightOf="@+id/backButtonOffers"
+            android:padding="15dp"
+            android:text="Offers"
+            android:textColor="#fff"
+            android:textSize="24sp"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/notif"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignTop="@+id/OfferTitle"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="49dp"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/new_message"
+                android:layout_width="26dp"
+                android:layout_height="25dp"
+                android:layout_alignRight="@+id/chat_message"
+                android:background="@drawable/badge_circle"
+                android:gravity="center_vertical|center_horizontal"
+                android:textAlignment="center"
+                android:translationZ="30dp"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/chat_message"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/message_icon"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="70dp"
+            android:layout_marginEnd="70dp">
+
+            <ImageView
+                android:id="@+id/hotelLogo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:adjustViewBounds="true"
+                android:visibility="gone" />
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:animationCache="true"
+                android:scrollbarSize="1dp">
+
+                <LinearLayout
+                    android:id="@+id/offerList"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:alwaysDrawnWithCache="true"
+                    android:animateLayoutChanges="true"
+                    android:animationCache="true"
+                    android:orientation="horizontal"
+                    android:scrollbarSize="1dp">
+
+                </LinearLayout>
+            </HorizontalScrollView>
+        </RelativeLayout>
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

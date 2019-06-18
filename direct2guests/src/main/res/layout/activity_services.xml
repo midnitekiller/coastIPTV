@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.direct2guests.d2g_tv.Activities.ServicesActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+
+        <ImageView
+            android:id="@+id/serviceBG"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="0dp"
+            tools:layout_editor_absoluteX="688dp"
+            tools:layout_editor_absoluteY="410dp" />
+
+        <TextClock
+            android:id="@+id/textClock6"
+            android:layout_width="143dp"
+            android:layout_height="41dp"
+            android:layout_alignParentEnd="false"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/gothambook"
+            android:text="textClock"
+            android:textAlignment="textStart"
+            android:textColor="#723C92"
+            android:textSize="30sp"
+            android:typeface="monospace"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/guestNameTxtV6"
+            android:layout_width="303dp"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/textClock6"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
+            android:fontFamily="@font/gothambook"
+            android:text="@string/indexGuestName"
+            android:textAlignment="viewEnd"
+            android:textColor="#723C92"
+            android:textSize="14sp"
+            android:typeface="monospace"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/selectcategory2"
+            android:layout_width="653dp"
+            android:layout_height="63dp"
+            android:layout_marginStart="160dp"
+            android:layout_marginTop="190dp"
+            android:fontFamily="@font/gothambook"
+            android:text="@string/selectcategory"
+            android:textAlignment="center"
+            android:textColor="#723C92"
+            android:textSize="45sp"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/imageView11"
+            android:layout_width="match_parent"
+            android:layout_height="113dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="580dp"
+            android:background="@color/black"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/HomeBtnServ"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="170dp"
+            android:layout_marginBottom="18dp"
+            android:background="@drawable/home_logo"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/BackBtnServ"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignBottom="@+id/HomeBtnServ"
+            android:layout_marginStart="30dp"
+            android:layout_toRightOf="@+id/HomeBtnServ"
+            android:background="@drawable/back_logo"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/txtservices"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_alignBottom="@+id/BackBtnServ"
+            android:layout_toRightOf="@+id/BackBtnServ"
+            android:text="Services"
+            android:textColor="#fff"
+            android:textSize="30sp"
+            android:visibility="gone"
+            tools:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/ServScroll"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="70dp"
+            android:layout_marginEnd="70dp">
+
+            <ImageView
+                android:id="@+id/servHotelLogo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignWithParentIfMissing="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:adjustViewBounds="true"
+                android:drawingCacheQuality="auto"
+                android:visibility="gone" />
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:animationCache="true"
+                android:scrollbarSize="1dp">
+
+
+                <LinearLayout
+                    android:id="@+id/servCards"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:alwaysDrawnWithCache="true"
+                    android:animateLayoutChanges="true"
+                    android:animationCache="true"
+                    android:orientation="horizontal"
+                    android:scrollbarSize="1dp">
+
+                </LinearLayout>
+            </HorizontalScrollView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/notif"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignTop="@+id/txtservices"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="50dp"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/new_message"
+                android:layout_width="26dp"
+                android:layout_height="25dp"
+                android:layout_alignRight="@+id/chat_message"
+                android:background="@drawable/badge_circle"
+                android:gravity="center_vertical|center_horizontal"
+                android:textAlignment="center"
+                android:translationZ="30dp"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/chat_message"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/message_icon"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

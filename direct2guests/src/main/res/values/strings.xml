@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name" translatable="false">D2G-IPTV</string>
+    <string name="indexWelcome">Welcome,</string>
+    <string name="indexTo">to</string>
+    <string name="indexHotelName">D2G Demo Hotel</string>
+    <string name="indexGuestName">Beloved Guest</string>
+    <string name="indexContinueButton">CONTINUE</string>
+    <string name="langText">Language</string>
+    <string name="French">fr</string>
+    <string name="launcherWelcome">Hello </string>
+    <string name="launcherDate">July 12, 2018</string>
+    <string name="launcherWatchTV">TV</string>
+    <string name="launcherWatchVOD">MOVIES</string>
+    <string name="launcherExtendButton">Extend/Checkout</string>
+    <string name="launcherHotelServices">Hotel Services</string>
+    <string name="launcherFrontDeskChat">FRONTDESK</string>
+    <string name="launcherFoodDrinks">ROOM SERVICE</string>
+    <string name="launcherPlacesNearby">ATTRACTIONS</string>
+    <string name="launcherHousekeeping">HOUSEKEEPING</string>
+    <string name="launcherSpaRentalServices">SERVICES</string>
+    <string name="launcherYourInfo">YOUR INFO</string>
+    <string name="launcherOffers">OFFERS</string>
+    <string name="launcherFeedBack">FEEDBACK</string>
+    <string name="launcherFlightTracker">Flight Tracker</string>
+    <string name="launcherFAQ">FAQ</string>
+    <string name="launcherHello">Hello</string>
+    <string name="launcherTMChannel">Live Channels</string>
+    <string name="launcherTMVOD">Videos On Demand</string>
+    <string name="launcherTMWelcometxt">Choose your entertainment</string>
+    <string name="formViewChoices">View Choices</string>
+    <string name="formChanBttn">Channels</string>
+    <string name="formVODBttn">Movies</string>
+
+    <string name="selectchannel">Select Channel</string>
+    <string name="selectcategory">Select Category</string>
+    <string name="cartinstruc">*Press right on the remote to go to cart</string>
+
+
+
+    <!-- strings for the activity_launcher -->
+
+
+
+
+    <!-- Menu -->
+    <!--<string name="action_settings">Settings</string>-->
+    <!--<string name="action_search">Search</string>-->
+    <!--<string name="action_logout">Logout</string>-->
+    <!--<string name="action_devinfo">Developer</string>-->
+    <!--<string name="share_app">Share App</string>-->
+    <!--<string name="language_setting">Change Language</string>-->
+    <!--<string name="action_change_pass">Change Password</string>-->
+    <!--<string name="lang_dialog_title">LANG</string>-->
+    <!--<string name="lang_dialog_message">LANG</string>-->
+    <!--<string name="English">en</string>-->
+    <!--<string name="Korean">ko</string>-->
+
+
+
+    <string-array name="currencies1">
+        <item>PHP</item>
+        <item>USD</item>
+        <item>AUD</item>
+        <item>EUR</item>
+        <item>BGN</item>
+        <item>BRL</item>
+        <item>CAD</item>
+        <item>CHF</item>
+        <item>CNY</item>
+        <item>CZK</item>
+        <item>DKK</item>
+        <item>GBP</item>
+        <item>HKD</item>
+        <item>HRK</item>
+        <item>HUF</item>
+        <item>IDR</item>
+        <item>ILS</item>
+        <item>INR</item>
+        <item>JPY</item>
+        <item>KRW</item>
+        <item>MXN</item>
+        <item>MYR</item>
+        <item>NOK</item>
+        <item>NZD</item>
+        <item>PLN</item>
+        <item>RON</item>
+        <item>RUB</item>
+        <item>SEK</item>
+        <item>SGD</item>
+        <item>THB</item>
+        <item>TRY</item>
+        <item>ZAR</item>
+    </string-array>
+
+    <string-array name="flight_type">
+        <item>Flight ID</item>
+        <!--<item>Airlines</item>-->
+        <!--<item>Location</item>-->
+    </string-array>
+
+    //airline codes
+    <string-array name="airlinecode">
+        <item>Cebu Pacific (CEB)</item>
+        <item>Air Asia Philippines (EZD)</item>
+        <item>Air Asia (AXM)</item>
+        <item>Philippine Airlines (PAL)</item>
+        <item>Singapore Airlines (SIA)</item>
+        <item>Air New Zealand (ANZ)</item>
+        <item>Korean Air (KAL)</item>
+        <item>Qantas Airways (QFA)</item>
+    </string-array>
+
+    <string-array name="acmonth">
+        <item>Jan</item>
+        <item>Feb</item>
+        <item>Mar</item>
+        <item>Apr</item>
+        <item>May</item>
+        <item>Jun</item>
+        <item>Jul</item>
+        <item>Aug</item>
+        <item>Sep</item>
+        <item>Oct</item>
+        <item>Nov</item>
+        <item>Dec</item>
+    </string-array>
+
+    <string-array name="acyear">
+        <item>2017</item>
+        <item>2018</item>
+        <item>2019</item>
+        <item>2020</item>
+        <item>2021</item>
+        <item>2022</item>
+        <item>2023</item>
+        <item>2024</item>
+    </string-array>
+
+    <array name="myImages">
+
+        <item>@drawable/ql1</item>
+        <item>@drawable/ql2</item>
+        <item>@drawable/ql3</item>
+
+    </array>
+
+    <string-array name="myADS">
+        <item>"http://192.168.2.200/adsvideo/ads1.mp4"</item>
+    </string-array>
+
+
+    <!--<array name="chanListBackground">-->
+        <!--<item>@drawable/channel_list_bg1</item>-->
+        <!--<item>@drawable/channel_list_bg2</item>-->
+        <!--<item>@drawable/channel_list_bg3</item>-->
+        <!--<item>@drawable/channel_list_bg4</item>-->
+        <!--<item>@drawable/channel_list_bg5</item>-->
+    <!--</array>-->
+
+
+    <string name="Korean">ko</string>
+
+
+
+
+
+
+
+
+
+</resources>

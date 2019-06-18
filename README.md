@@ -1,2 +1,2 @@
-# coastIPTV
-Coast Hotel IPTV
+# questIPTV
+Quest IPTV

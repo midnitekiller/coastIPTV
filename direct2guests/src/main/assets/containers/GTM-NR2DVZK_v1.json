@@ -1,0 +1,124 @@
+{
+    "exportFormatVersion": 2,
+    "exportTime": "2019-06-14 23:36:44",
+    "containerVersion": {
+        "path": "accounts/4702187779/containers/12184229/versions/1",
+        "accountId": "4702187779",
+        "containerId": "12184229",
+        "containerVersionId": "1",
+        "name": "firebase_analytics_v1",
+        "description": "Analytics for IPTV Production",
+        "container": {
+            "path": "accounts/4702187779/containers/12184229",
+            "accountId": "4702187779",
+            "containerId": "12184229",
+            "name": "iptv-prod",
+            "publicId": "GTM-NR2DVZK",
+            "usageContext": [
+                "ANDROID_SDK_5"
+            ],
+            "fingerprint": "1560554854384",
+            "tagManagerUrl": "https://tagmanager.google.com/#/container/accounts/4702187779/containers/12184229/workspaces?apiLink=container"
+        },
+        "tag": [
+            {
+                "accountId": "4702187779",
+                "containerId": "12184229",
+                "tagId": "1",
+                "name": "FireBase Analytics",
+                "type": "fm",
+                "parameter": [
+                    {
+                        "type": "LIST",
+                        "key": "editParamTable",
+                        "list": [
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "editParamKey",
+                                        "value": "{{Event Name}}"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "editParamValue",
+                                        "value": "firebaseAnalytics"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "editParamKey",
+                                        "value": "{{App Name}}"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "editParamValue",
+                                        "value": "iptvProd"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "editParamKey",
+                                        "value": "{{App Version Code}}"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "editParamValue",
+                                        "value": "{{App Version Code}}"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "action",
+                        "value": "filter"
+                    }
+                ],
+                "fingerprint": "1560555119461",
+                "firingTriggerId": [
+                    "2147479556"
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT"
+            }
+        ],
+        "builtInVariable": [
+            {
+                "accountId": "4702187779",
+                "containerId": "12184229",
+                "type": "EVENT_NAME",
+                "name": "Event Name"
+            },
+            {
+                "accountId": "4702187779",
+                "containerId": "12184229",
+                "type": "APP_ID",
+                "name": "App ID"
+            },
+            {
+                "accountId": "4702187779",
+                "containerId": "12184229",
+                "type": "APP_NAME",
+                "name": "App Name"
+            },
+            {
+                "accountId": "4702187779",
+                "containerId": "12184229",
+                "type": "APP_VERSION_CODE",
+                "name": "App Version Code"
+            }
+        ],
+        "fingerprint": "1560555179201",
+        "tagManagerUrl": "https://tagmanager.google.com/#/versions/accounts/4702187779/containers/12184229/versions/1?apiLink=version"
+    }
+}

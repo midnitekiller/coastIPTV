@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.direct2guests.d2g_tv.Activities.LauncherActivity">
+
+    <RelativeLayout
+        android:id="@+id/launcher_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/ql2"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp">
+
+        <VideoView
+            android:id="@+id/videoViewLauncher"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="237dp"
+            android:layout_height="286dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="14dp"
+            android:layout_marginBottom="34dp"
+            android:src="@android:drawable/screen_background_dark_transparent" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="113dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="385dp"
+            android:background="@color/black" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="211dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textClock"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="-18dp"
+            android:layout_marginTop="236dp"
+            android:text="Check-in Time:"
+            android:textAlignment="center"
+            android:textColor="@color/orange"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/shadowTime"
+            android:layout_width="176dp"
+            android:layout_height="31dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="275dp"
+            android:layout_marginEnd="45dp"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textColor="@color/orange"
+            android:textSize="24sp"
+            android:textStyle="italic"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="175dp"
+            android:layout_height="42dp"
+            android:layout_alignStart="@+id/textClock"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="-5dp"
+            android:layout_marginBottom="120dp"
+            android:text="Current Time:"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/orange"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/tm_currentTime"
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="738dp"
+            android:layout_marginTop="413dp"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/lb_speech_orb_recording"
+            android:textSize="24sp"
+            android:textStyle="italic"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/tm_welcomeTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="60dp"
+            android:layout_toEndOf="@+id/userLogo"
+            android:text="@string/launcherWelcome"
+            android:textColor="#fff"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/dateTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="57dp"
+            android:layout_marginEnd="25dp"
+            android:layout_toStartOf="@+id/textClock"
+            android:fontFamily="monospace"
+            android:paddingTop="0dp"
+            android:text="@string/launcherDate"
+            android:textColor="@color/orange"
+            android:textSize="24sp"
+            android:typeface="monospace"
+            tools:ignore="RelativeOverlap" />
+
+        <TextClock
+            android:id="@+id/textClock"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="57dp"
+            android:layout_marginEnd="48dp"
+            android:fontFamily="monospace"
+            android:paddingTop="0dp"
+            android:text="textClock"
+            android:textColor="@color/orange"
+            android:textSize="24sp"
+            android:typeface="monospace" />
+
+        <ImageView
+            android:id="@+id/userLogo"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="84dp"
+            android:layout_marginTop="46dp"
+            android:src="@drawable/user_icon"
+            android:visibility="visible"
+            tools:ignore="ContentDescription" />
+
+        <RelativeLayout
+            android:id="@+id/weatherL"
+            android:layout_width="389dp"
+            android:layout_height="42dp"
+            android:layout_below="@+id/dateTxt"
+            android:layout_alignStart="@+id/dateTxt"
+            android:layout_alignRight="@+id/textClock"
+            android:layout_marginStart="-56dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="25dp"
+            android:gravity="right">
+
+            <ImageView
+                android:id="@+id/LweatherIcon1"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true" />
+
+            <TextView
+                android:id="@+id/LweatherTemp1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/LweatherIcon1"
+                android:textColor="#fff"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/LweatherDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/LweatherTemp1"
+                android:layout_toRightOf="@+id/LweatherTemp1"
+                android:textColor="#fff"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tm_welcomeTxt"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="48dp"
+            android:elevation="30dp">
+
+            <ImageView
+                android:id="@+id/hotelLogo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignWithParentIfMissing="false"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="false"
+                android:layout_centerInParent="false"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="20dp"
+                android:adjustViewBounds="true" />
+
+            <HorizontalScrollView
+                android:id="@+id/LauncherScrollView"
+                android:layout_width="712dp"
+                android:layout_height="313dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="-21dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="54dp"
+                android:layout_marginRight="0dp"
+                android:layout_toEndOf="@+id/hotelLogo"
+                android:persistentDrawingCache="all">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="0dp"
+                    android:alwaysDrawnWithCache="true"
+                    android:animateLayoutChanges="false"
+                    android:animationCache="true"
+                    android:elevation="30dp"
+                    android:orientation="horizontal"
+                    android:paddingStart="0dp"
+                    android:paddingTop="60dp"
+                    android:persistentDrawingCache="all">
+
+                    <FrameLayout
+                        android:id="@+id/watchtvframe"
+                        android:layout_width="180dp"
+                        android:layout_height="180dp"
+                        android:layout_marginLeft="55dp"
+                        android:layout_marginTop="55dp"
+                        android:layout_marginRight="40dp"
+                        android:alwaysDrawnWithCache="true"
+                        android:animationCache="true"
+                        android:background="@drawable/background_round"
+                        android:clipChildren="false"
+                        android:clipToPadding="false"
+                        android:elevation="30dp"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:onClick="watchtv_activity"
+                        android:persistentDrawingCache="all"
+                        android:translationZ="1dp">
+
+                        <ImageView
+                            android:id="@+id/tv_icon"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="30dp"
+                            android:drawingCacheQuality="auto"
+                            android:src="@drawable/tv_icon" />
+
+                        <TextView
+                            android:id="@+id/watchtv_launcher_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:layout_marginTop="0dp"
+                            android:layout_marginBottom="0dp"
+                            android:padding="17dp"
+                            android:text="@string/launcherWatchTV"
+                            android:textAlignment="center"
+                            android:textColor="#000"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/hotelservicesframe"
+                        android:layout_width="180dp"
+                        android:layout_height="180dp"
+                        android:layout_marginTop="55dp"
+                        android:layout_marginRight="40dp"
+                        android:alwaysDrawnWithCache="true"
+                        android:animationCache="true"
+                        android:background="@drawable/background_round"
+                        android:elevation="30dp"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:onClick="hotelservices_activity"
+                        android:persistentDrawingCache="all">
+
+                        <ImageView
+                            android:id="@+id/about_icon"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="30dp"
+                            android:src="@drawable/about_icon" />
+
+                        <TextView
+                            android:id="@+id/hotelservices_launcher_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:layout_marginTop="0dp"
+                            android:layout_marginBottom="0dp"
+                            android:padding="17dp"
+                            android:text="@string/launcherHotelServices"
+                            android:textAlignment="center"
+                            android:textColor="#000"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/checkoutFrame"
+                        android:layout_width="180dp"
+                        android:layout_height="180dp"
+                        android:layout_marginTop="55dp"
+                        android:layout_marginRight="40dp"
+                        android:alwaysDrawnWithCache="true"
+                        android:animationCache="true"
+                        android:background="@drawable/background_round"
+                        android:clipChildren="false"
+                        android:clipToPadding="false"
+                        android:elevation="30dp"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:onClick="openCheckoutActivity"
+                        android:persistentDrawingCache="all"
+                        android:translationZ="1dp">
+
+                        <ImageView
+                            android:id="@+id/close_icon"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="40dp"
+                            android:drawingCacheQuality="auto"
+                            android:src="@drawable/close_logo" />
+
+                        <TextView
+                            android:id="@+id/checkout_frame_txt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:layout_marginTop="0dp"
+                            android:layout_marginBottom="0dp"
+                            android:padding="17dp"
+                            android:text="@string/launcherExtendButton"
+                            android:textAlignment="center"
+                            android:textColor="#000"
+                            android:textSize="18sp"
+                            android:textStyle="normal" />
+                    </FrameLayout>
+                </LinearLayout>
+            </HorizontalScrollView>
+            <requestFocus />
+        </RelativeLayout>
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

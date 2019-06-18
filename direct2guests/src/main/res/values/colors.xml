@@ -1,0 +1,27 @@
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+
+
+    
+    <color name="background_gradient_start">#95000000</color>
+    <color name="background_gradient_end">#dddddd</color>
+    <color name="fastlane_background">#0096a6</color>
+    <color name="search_opaque">#ffaa3f</color>
+    <color name="selected_background">#ffaa3f</color>
+    <color name="detail_background">#0096a6</color>
+    <color name="soft_opaque">#30000000</color>
+    <color name="img_soft_opaque">#30ff0000</color>
+    <color name="img_full_opaque">#00000000</color>
+    <color name="black_opaque">#aa000000</color>
+    <color name="black">#59000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="orange_transparent">#aafadca7</color>
+    <color name="transparent">#00ffffff</color>
+    <color name="orange">#fadca7</color>
+    <color name="yellow">#ffe602</color>.3
+    <color name="default_background">#3d3d3d</color>
+    <color name="chan_divider">#fcbd2e</color>
+</resources>

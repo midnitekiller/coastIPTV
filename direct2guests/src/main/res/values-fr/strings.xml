@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name" translatable="false">D2G-IPTV</string>
+    <string name="launcherDate" translatable="false">July 12, 2018</string>
+    <string name="indexWelcome">"BIENVENUE"</string>
+    <string name="indexTo">" à "</string>
+    <string name="indexHotelName">" Les Chambres Alinace"</string>
+    <string name="indexGuestName">" Bien-aimé "</string>
+    <string name="indexContinueButton">CONTINUER</string>
+    <string name="langText">La langue</string>
+    <string name="launcherWelcome">Bonjour </string>
+    <string name="launcherWatchTV">TV et Films</string>
+    <string name="launcherHotelServices">" Services aux chambres"</string>
+    <string name="launcherFAQ">FAQ</string>
+    <string name="launcherFlightTracker">" Suivi des vols"</string>
+    <string name="launcherFeedBack">" Retour d'information"</string>
+    <string name="launcherOffers">" Des offres"</string>
+    <string name="launcherYourInfo">" Votre information"</string>
+    <string name="launcherSpaRentalServices">" Spa et services de location"</string>
+    <string name="launcherHousekeeping">" Ménagère"</string>
+    <string name="launcherPlacesNearby">" Lieux à proximité"</string>
+    <string name="launcherFoodDrinks">" Nourriture et boissons"</string>
+    <string name="launcherFrontDeskChat">" Chat de la réception"</string>
+    <string name="formViewChoices">Voir les choix</string>
+    <string name="formChanBttn">Chaînes</string>
+    <string name="formVODBttn">Films</string>
+    <string name="launcherHello">Bonjour</string>
+    <string name="launcherTMWelcometxt">Choisissez votre divertissement</string>
+    <string name="launcherTMVOD">" Vidéos à la demande"</string>
+    <string name="launcherTMChannel">" Chaînes en direct"</string>
+    <string name="launcherExtendButton">Étendre/Checkout</string>
+
+
+</resources>

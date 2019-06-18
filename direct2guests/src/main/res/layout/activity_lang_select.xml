@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ConstraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.LangSelectActivity">
+
+    <RelativeLayout
+        android:id="@+id/langSelectLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="1dp"
+        android:background="@drawable/main4"
+        android:padding="1dp"
+        android:paddingBottom="1dp"
+        android:paddingEnd="1dp"
+        android:paddingLeft="1dp"
+        android:paddingRight="1dp"
+        android:paddingStart="1dp"
+        android:paddingTop="1dp"
+        app:layout_constraintDimensionRatio="1:1"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <VideoView
+            android:id="@+id/videoViewMainLangActivity"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="593dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="159dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.203">
+
+        <HorizontalScrollView
+            android:id="@+id/LangSelectScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="448dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="22dp"
+                android:alwaysDrawnWithCache="true"
+                android:animateLayoutChanges="false"
+                android:animationCache="true"
+                android:orientation="horizontal"
+                android:paddingStart="0dp"
+                android:persistentDrawingCache="all">
+
+                <FrameLayout
+                    android:id="@+id/LangChina"
+                    android:layout_width="100dp"
+                    android:layout_height="85dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="15dp"
+                    android:alwaysDrawnWithCache="true"
+                    android:animationCache="true"
+                    android:clipChildren="false"
+                    android:clipToPadding="false"
+
+                    android:focusable="auto"
+                    android:focusableInTouchMode="false"
+                    android:persistentDrawingCache="all"
+                    android:translationZ="1dp">
+
+                    <ImageView
+                        android:id="@+id/ChinaIcon"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="0dp"
+                        android:drawingCacheQuality="auto"
+                        android:src="@drawable/cnicon" />
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/LangJap"
+                    android:layout_width="100dp"
+                    android:layout_height="85dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="15dp"
+                    android:alwaysDrawnWithCache="true"
+                    android:animationCache="true"
+                    android:clipChildren="false"
+                    android:clipToPadding="false"
+
+                    android:focusable="auto"
+                    android:focusableInTouchMode="false"
+                    android:persistentDrawingCache="all"
+                    android:translationZ="1dp">
+
+                    <ImageView
+                        android:id="@+id/JapIcon"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="0dp"
+                        android:drawingCacheQuality="auto"
+                        android:src="@drawable/jaicon" />
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/LangEnglish"
+                    android:layout_width="100dp"
+                    android:layout_height="85dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="15dp"
+                    android:alwaysDrawnWithCache="true"
+                    android:animationCache="true"
+                    android:clipChildren="false"
+
+                    android:clipToPadding="false"
+                    android:focusable="auto"
+                    android:focusableInTouchMode="true"
+                    android:persistentDrawingCache="all"
+                    android:translationZ="1dp">
+
+
+                    <ImageView
+                        android:id="@+id/EnglishIcon"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="0dp"
+                        android:drawingCacheQuality="auto"
+                        android:src="@drawable/enicon" />
+
+                    <requestFocus />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/LangFrench"
+                    android:layout_width="100dp"
+                    android:layout_height="85dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="15dp"
+                    android:alwaysDrawnWithCache="true"
+                    android:animationCache="true"
+                    android:clipChildren="false"
+                    android:clipToPadding="false"
+
+                    android:focusable="auto"
+                    android:focusableInTouchMode="false"
+                    android:persistentDrawingCache="all"
+                    android:translationZ="1dp">
+
+                    <ImageView
+                        android:id="@+id/FrenchIcon"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="0dp"
+                        android:drawingCacheQuality="auto"
+                        android:src="@drawable/fricon" />
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/LangKorean"
+                    android:layout_width="100dp"
+                    android:layout_height="85dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="15dp"
+                    android:alwaysDrawnWithCache="true"
+                    android:animationCache="true"
+                    android:clipChildren="false"
+                    android:clipToPadding="false"
+
+                    android:focusable="auto"
+                    android:focusableInTouchMode="false"
+                    android:persistentDrawingCache="all"
+                    android:translationZ="1dp">
+
+                    <ImageView
+                        android:id="@+id/KoreaIcon"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="0dp"
+                        android:drawingCacheQuality="auto"
+                        android:src="@drawable/kricon" />
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+
+        </HorizontalScrollView>
+
+    </RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>
+
+

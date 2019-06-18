@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/cardDialog"
+        android:layout_width="900dp"
+        android:layout_height="420dp"
+        android:background="@drawable/main3"
+        android:padding="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.494">
+
+        <RelativeLayout
+            android:id="@+id/dMainImage"
+            android:layout_width="591dp"
+            android:layout_height="395dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+            <RelativeLayout
+                android:id="@+id/indicators"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:gravity="center_vertical|center_horizontal"
+                android:translationZ="50dp">
+
+                <ImageView
+                    android:id="@+id/indi1"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:src="@drawable/indicator_selected"
+                    android:translationZ="10dp" />
+
+                <ImageView
+                    android:id="@+id/indi2"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_toRightOf="@+id/indi1"
+                    android:src="@drawable/indicator_unselected"
+                    android:translationZ="10dp"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/indi3"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_toRightOf="@+id/indi2"
+                    android:src="@drawable/indicator_unselected"
+                    android:translationZ="10dp"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/indi4"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_toRightOf="@+id/indi3"
+                    android:src="@drawable/indicator_unselected"
+                    android:translationZ="10dp"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/indi5"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_toRightOf="@+id/indi4"
+                    android:src="@drawable/indicator_unselected"
+                    android:translationZ="10dp"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/arrowBack"
+                android:layout_width="50dp"
+                android:layout_height="80dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignTop="@+id/arrowNext"
+                android:layout_marginLeft="-8dp"
+                android:layout_marginStart="12dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/arrow_back"
+                android:translationZ="10dp" />
+
+            <ImageView
+                android:id="@+id/arrowNext"
+                android:layout_width="50dp"
+                android:layout_height="80dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="18dp"
+                android:layout_marginRight="-8dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/arrow_next"
+                android:translationZ="10dp" />
+
+            <ImageView
+                android:id="@+id/mImage"
+                android:layout_width="match_parent"
+                android:layout_height="355dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/background_round"
+                android:scaleType="centerInside" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/dDetails"
+            android:layout_width="264dp"
+            android:layout_height="406dp"
+            android:layout_alignParentBottom="false"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentTop="false"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="25dp"
+            android:layout_toRightOf="@+id/dMainImage"
+            android:background="@drawable/background_round"
+            android:paddingBottom="15dp"
+            android:paddingEnd="10dp"
+            android:paddingStart="15dp"
+            android:paddingTop="15dp">
+
+            <TextView
+                android:id="@+id/adTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="Cebu Aquascape"
+                android:textColor="#393939"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/adDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/adTitle"
+                android:layout_marginBottom="10dp"
+                android:text="lorem impsum "
+                android:textColor="#393939"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/separator"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/adDescription"
+                android:scaleType="fitXY"
+                android:src="@android:drawable/title_bar"
+                android:tint="#fff" />
+
+            <TextView
+                android:id="@+id/adAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/separator"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Address : Cebu, Philippines"
+                android:textColor="#393939"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/separator2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/adAddress"
+                android:scaleType="fitXY"
+                android:src="@android:drawable/title_bar"
+                android:tint="#fff" />
+
+            <TextView
+                android:id="@+id/adContactNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/separator2"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Contact No : 0912-XXX-XXXX"
+                android:textColor="#393939"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/separator3"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/adContactNo"
+                android:scaleType="fitXY"
+                android:src="@android:drawable/title_bar"
+                android:tint="#fff" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

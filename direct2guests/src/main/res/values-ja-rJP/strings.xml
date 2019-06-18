@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">D2G-IPTV</string>
+    <string name="launcherExtendButton">延長/チェックアウト</string>
+    <string name="launcherTMChannel">ライブチャンネル</string>
+    <string name="launcherTMVOD">オンデマンドビデオ</string>
+    <string name="launcherTMWelcometxt">エンターテインメントを選択</string>
+    <string name="indexTo">に</string>
+    <string name="indexGuestName">愛するゲスト</string>
+    <string name="indexWelcome">ようこそ</string>
+    <string name="launcherWelcome">こんにちは</string>
+    <string name="formChanBttn">チャンネル</string>
+    <string name="launcherFrontDeskChat">フロントデスクチャット</string>
+    <string name="indexContinueButton">持続する</string>
+    <string name="launcherOffers">オファー</string>
+    <string name="launcherFAQ">よくある質問</string>
+    <string name="formVODBttn">映画</string>
+    <string name="launcherHello">こんにちは</string>
+    <string name="langText">言語</string>
+    <string name="indexHotelName">D2Gデモホテル</string>
+    <string name="launcherPlacesNearby">" 近くの場所"</string>
+    <string name="launcherHousekeeping">ハウスキーピング</string>
+    <string name="launcherFoodDrinks">食べ物や飲み物</string>
+    <string name="launcherFeedBack">フィードバック</string>
+    <string name="launcherHotelServices">ルームサービス</string>
+    <string name="launcherSpaRentalServices">スパ・レンタルサービス</string>
+    <string name="launcherFlightTracker">フライトトラッカー</string>
+    <string name="launcherWatchTV">テレビ/映画</string>
+    <string name="formViewChoices">ビューの選択肢</string>
+</resources>

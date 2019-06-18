@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/showhouse"
+        android:layout_width="416dp"
+        android:layout_height="428dp"
+        android:background="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.474"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp">
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:background="#80ffffff">
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="329dp"
+            android:layout_height="403dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="0dp">
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/HousekeepingTitleS"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/brandonbold"
+            android:padding="20dp"
+            android:text="@string/launcherHousekeeping"
+            android:textAlignment="center"
+            android:textColor="#ae1a2f"
+            android:textSize="36sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/checkinDateDialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/HousekeepingTitleS"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/gothambook"
+            android:text="Thu June 29 2017"
+            android:textAlignment="center"
+            android:textColor="#393939"
+            android:textSize="24sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/HousekeepingStatusS"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/checkinDateDialog"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="11dp"
+            android:text="Status: "
+            android:textAlignment="center"
+            android:textColor="#393939"
+            android:textSize="25sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/CancelHouseKeeping"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/HousekeepingStatusS"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="14dp"
+            android:text="Cancel Housekeeping"
+            android:textAlignment="center"
+            android:textColor="#393939"
+            android:textSize="20sp"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/TodayHKBtnS"
+            android:layout_width="270dp"
+            android:layout_height="60dp"
+            android:layout_below="@+id/checkinDateDialog"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="#edc894"
+            android:focusable="auto"
+            android:focusableInTouchMode="true"
+            android:focusedByDefault="true"
+            android:fontFamily="@font/brandonreg"
+            android:text="Make Up Room"
+            android:textAllCaps="true"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/WholeHKBtn"
+            android:layout_width="270dp"
+            android:layout_height="60dp"
+            android:layout_below="@+id/TodayHKBtnS"
+            android:layout_alignStart="@+id/TodayHKBtnS"
+            android:layout_marginTop="10dp"
+            android:background="#edc894"
+            android:focusable="auto"
+            android:focusableInTouchMode="true"
+            android:fontFamily="@font/brandonreg"
+            android:text="Mini Bar Refill"
+            android:textAllCaps="true"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/RequestHouseKeepingS"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/RequestHKBtnS"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="29dp"
+            android:text="For all other requests please dial 0."
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:textStyle="italic" />
+
+        <Button
+            android:id="@+id/RequestHKBtnS"
+            android:layout_width="270dp"
+            android:layout_height="60dp"
+            android:layout_below="@+id/WholeHKBtn"
+            android:layout_alignParentBottom="false"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="#edc894"
+            android:focusable="auto"
+            android:focusableInTouchMode="true"
+            android:fontFamily="@font/brandonreg"
+            android:text="Laundry Request"
+            android:textAllCaps="true"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/imageView20"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="0dp"
+            android:background="#edc894"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

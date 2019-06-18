@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:id="@+id/showinfo"
+        android:layout_width="890dp"
+        android:layout_height="461dp"
+        android:background="#ffffff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <FrameLayout
+            android:id="@+id/rmmbg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/roomssss">
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="0dp"
+            android:background="#a6ffffff">
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="466dp"
+            android:layout_height="375dp"
+            android:layout_alignEnd="@+id/GCheckIO"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="41dp"
+            android:layout_marginEnd="42dp"
+            android:background="#ccffffff" />
+
+        <TextView
+            android:id="@+id/GCheckIO2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/GuestCheckOut"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/gothambook"
+            android:text="For late check out please dial 0."
+            android:textAlignment="center"
+            android:textColor="#393939"
+            android:textSize="12sp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/GuestInfoTitle"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="false"
+            android:background="#723C92"
+            android:fontFamily="@font/gothambook"
+            android:paddingTop="14dp"
+            android:text="Your Information"
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/GName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/GuestInfoTitle"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/gothambook"
+            android:text="Guest Name :"
+            android:textAlignment="center"
+            android:textColor="#393939"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/GuestName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/GName"
+            android:layout_alignParentStart="true"
+            android:fontFamily="@font/gothambook"
+            android:text="D2G"
+            android:textAlignment="center"
+            android:textColor="#393939"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/GBilling"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/GuestRoomNo"
+            android:text="Current Billing:"
+            android:textAlignment="center"
+            android:textColor="#393939"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/GWithOutTax"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/GBilling"
+            android:text="With Out Tax"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/GWithTax"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/GBilling"
+            android:layout_marginTop="0dp"
+            android:text="With Tax"
+            android:textAlignment="center"
+            android:textColor="#393939"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/GRoom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/GuestName"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/gothambook"
+            android:text="Room :"
+            android:textAlignment="center"
+            android:textColor="#393939"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/GuestRoomNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/GRoom"
+            android:layout_alignParentStart="true"
+            android:fontFamily="@font/gothambook"
+            android:text="23"
+            android:textAlignment="center"
+            android:textColor="#393939"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/GCheckIO"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/GWithTax"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/gothambook"
+            android:text="Check-In Time / Check-Out Time"
+            android:textAlignment="center"
+            android:textColor="#393939"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/GuestCheckIn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/GCheckIO"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/gothambook"
+            android:text="Check-In : 3:00 PM"
+            android:textAlignment="center"
+            android:textColor="#393939"
+            android:textSize="12sp"
+            android:textStyle="italic" />
+
+        <ImageView
+            android:id="@+id/imageView21"
+            android:layout_width="144dp"
+            android:layout_height="48dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="201dp"
+            android:layout_marginBottom="41dp"
+            android:src="@drawable/questlogo"
+            tools:visibility="gone" />
+
+        <TextView
+            android:id="@+id/GuestCheckOut"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/GuestCheckIn"
+            android:layout_alignParentStart="true"
+            android:fontFamily="@font/gothambook"
+            android:text="Check-Out : 12:00 Noon"
+            android:textAlignment="center"
+            android:textColor="#393939"
+            android:textSize="12sp"
+            android:textStyle="italic" />
+
+    </RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>

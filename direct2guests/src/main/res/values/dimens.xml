@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="result_font">17sp</dimen>
+    <dimen name="header_font">20sp</dimen>
+
+    <dimen name="video_width">800dp</dimen>
+    <dimen name="video_height">400dp</dimen>
+
+
+</resources>

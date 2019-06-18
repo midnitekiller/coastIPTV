@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/offerCard"
+    android:layout_width="400dp"
+    android:layout_height="150dp"
+    android:layout_marginStart="10dp"
+    android:layout_marginTop="10dp"
+    android:background="#86F7F4F4">
+
+    <ImageView
+        android:id="@+id/offImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:id="@+id/offTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="15dp"
+        android:layout_toEndOf="@+id/offImage"
+        android:fontFamily="@font/brandonbold"
+        android:text="Title"
+        android:textAlignment="textStart"
+        android:textColor="#723C92"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/offDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_below="@id/offOldPrice"
+        android:layout_alignStart="@+id/offTitle"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentBottom="false"
+        android:layout_marginEnd="5dp"
+        android:layout_toEndOf="@id/offImage"
+        android:fontFamily="@font/brandonreg"
+        android:text="Description here"
+        android:textAlignment="textStart"
+        android:textColor="#723C92"
+        android:textSize="12sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/offPromoPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/offTitle"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="5dp"
+        android:layout_toEndOf="@id/offImage"
+        android:fontFamily="@font/brandonbold"
+        android:text="TextView"
+        android:textAlignment="textStart"
+        android:textColor="#723C92"
+        android:textSize="12sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/offOldPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/offPromoPrice"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="5dp"
+        android:layout_toEndOf="@id/offImage"
+        android:fontFamily="@font/brandonreg"
+        android:text="price"
+        android:textAlignment="textStart"
+        android:textColor="#723C92"
+        android:textSize="12sp"
+        android:visibility="gone" />
+
+</RelativeLayout>

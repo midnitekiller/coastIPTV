@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/forexModal"
+        android:layout_width="510dp"
+        android:layout_height="325dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/modal_bg_info"
+        android:backgroundTintMode="src_over"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/forexName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="#292929"
+            android:gravity="center_horizontal"
+            android:padding="20dp"
+            android:text=" Foreign Exchange Rates"
+            android:textColor="#fff"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:id="@+id/from"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/forexName"
+            android:layout_marginTop="45dp"
+            android:gravity="center_horizontal">
+
+            <EditText
+                android:id="@+id/fromValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="false"
+                android:layout_marginRight="15dp"
+                android:ems="5"
+                android:imeOptions="flagNavigateNext"
+                android:inputType="none|numberDecimal"
+                android:textColor="#fff"
+                android:textSize="30sp" />
+
+            <Spinner
+                android:id="@+id/fromCurrency"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/fromValue"
+                android:layout_alignBottom="@+id/fromValue"
+                android:layout_alignParentEnd="false"
+                android:layout_toRightOf="@+id/fromValue"
+                android:entries="@array/currencies1"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:focusedByDefault="true" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/to"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/from"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal">
+
+            <EditText
+                android:id="@+id/toValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:editable="false"
+                android:ems="5"
+                android:focusable="false"
+                android:imeOptions="flagNavigateNext"
+                android:inputType="none"
+                android:textColor="#fff"
+                android:textSize="30sp" />
+
+            <Spinner
+                android:id="@+id/toCurrency"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/toValue"
+                android:layout_alignBottom="@+id/toValue"
+                android:layout_toRightOf="@+id/toValue"
+                android:entries="@array/currencies1"
+                android:focusable="true"
+                android:focusableInTouchMode="true" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
